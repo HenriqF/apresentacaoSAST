@@ -23,4 +23,4 @@ jobs:
         run: pip install bandit
 
       - name: sast
-        run: bandit workflow/main.py
+        run: bandit -r workflow
