@@ -7,11 +7,3 @@ with open("github.py", "r") as file:
     
         print(f"Vulnerabilidade em: {vul.start()} - {vul.end()}")
         print(conteudo[vul.start():vul.end()])
-
-
-
-
-
-
-
-        
