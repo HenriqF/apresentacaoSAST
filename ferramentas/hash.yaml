@@ -1,0 +1,16 @@
+rules:
+  - id: funcao-hash-ruim
+    languages:
+      - python
+    severity: WARNING
+    message: "Detectada a implementação e uso de uma função hash fraca"
+    patterns:
+      - pattern: |
+          def $FUNCAO($ARGUMENTO):
+              ...
+              if $ARGUMENTO == "":
+                  ...
+              if $ARGUMENTO == $VALOR:
+                  ...
+              return $EXPRESSAO
+
